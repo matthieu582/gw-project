@@ -1,0 +1,17 @@
+numpy
+psutil
+matplotlib
+pandas
+scipy
+ipywidgets
+ipynb
+xarray
+rise
+voila
+streamlit
+streamlit_book
+streamlit_extras
+deep_translator
+bokeh
+streamlit_bokeh
+fpdf
