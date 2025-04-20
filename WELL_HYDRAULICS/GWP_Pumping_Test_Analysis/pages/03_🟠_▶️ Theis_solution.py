@@ -43,7 +43,7 @@ with cent_co:
     st.image('WELL_HYDRAULICS/GWP_Pumping_Test_Analysis/assets/images/confined_aquifer_2.png', caption="Cross section of a pumped confined aquifer with s1 the drawdown at distance r1 from the well and s2 the drawdown at distance r2, Kruseman et al., 1991")
             
 st.markdown("""
-            Before investigating the Theis Solution it is useful to think about the questions provided in this initial assessment.
+            Before investigating the Theis Solution, it is useful to think about the questions provided in this initial assessment.
 """
 )
 
@@ -116,7 +116,7 @@ with st.expander('**Click here for more information** about the underlying theor
     """
     This function is commonly evaluated using either numerical techniques or tables of $W$ as a function of $u$. The Theis solution is widely used in pumping test analysis to estimate aquifer properties by fitting observed drawdown data to the Theis type curve.
     
-    Another application that provides all materials and guidance for **manual Theis type-curve matching** is availble at [https://theis-manual.streamlit.app/](https://theis-manual.streamlit.app/).
+    Another application that provides all materials and guidance for **manual Theis type-curve matching** is available at [https://theis-manual.streamlit.app/](https://theis-manual.streamlit.app/).
     """
     )
 
@@ -129,9 +129,9 @@ st.markdown("""
             
             Additionally, you can **switch between a log-log and a semi-log plot** to analyze the effect of transmissivity and storativity values on the drawdown behavior. The semi-log plot is useful for visualizing that late-time drawdown-versus-time data from a confined aquifer form a straight line on a semi-log graph.
             
-            More precise matching can be acheived by **zooming in** and/or by using **typed number input rather than slider input**. Both are selected with a toggle switch.
+            More precise matching can be achieved by **zooming in** and/or by using **typed number input rather than slider input**. Both are selected with a toggle switch.
             
-            The **scatter plot** can be turned on by using a toggle switch. It provides a visual comparison of the data and the fitted curve. A 45 degree line indicates a perfect match between the measured drawdowns and those calculated by the Theis solution for the input values of $T$ and $S$.
+            The **scatter plot** can be turned on by using a toggle switch. It provides a visual comparison of the data and the fitted curve. A 45-degree line indicates a perfect match between the measured drawdowns and those calculated by the Theis solution for the input values of $T$ and $S$.
 """
 )
 # Computation
@@ -187,7 +187,7 @@ def update_S(v):
 # Initialize session state for value and toggle state
 st.session_state.number_input = False  # Default to number_input
 
-# (Here, the methode computes the data for the well function. Those data can be used to generate a type curve.)
+# (Here, the method computes the data for the well function. Those data can be used to generate a type curve.)
 u_min = -5
 u_max = 4
 
@@ -274,7 +274,7 @@ def inverse(v):
 
     m_time_s = [i*60 for i in m_time] # time in seconds
     num_times = len(m_time)
-    # Compute K and SS to provide parameters for plausability check
+    # Compute K and SS to provide parameters for plausibility check
     # (i.e. are the parameter in a reasonable range)
     K = T/b     # m/s
     SS = S/b

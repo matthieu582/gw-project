@@ -258,7 +258,7 @@ st.markdown("""
             
             More precise matching can be achieved by **zooming in** and/or by using **typed number input rather than slider input**. Both are selected with a toggle switch.
             
-            The **scatter plot** can be turned on by using a toggle switch. It provides a visual comparison of the data and the fitted curve. A 45 degree line indicates a perfect match between the measured drawdowns and those calculated by the Hantush-Jacob solution for the input values of $T$, $S$, and $r/B$.
+            The **scatter plot** can be turned on by using a toggle switch. It provides a visual comparison of the data and the fitted curve. A 45-degree line indicates a perfect match between the measured drawdowns and those calculated by the Hantush-Jacob solution for the input values of $T$, $S$, and $r/B$.
 """
 )
 
@@ -437,7 +437,7 @@ inverse(1)
 
 with st.expander('**:red[Click here]** to see one **example of the Hantush-Jacob curve fitting to the :green[Varnum] data**'):
     st.markdown(""" 
-            The following example shows one curve match. If five experts made the curve match they would all have a slightly different set of parameter values, but the parameter sets would likely all be close enough to one another to draw comparable conclusions, and make similar predictions. 
+            The following example shows one curve match. If five experts made the curve match, they would all have a slightly different set of parameter values, but the parameter sets would likely all be close enough to one another to draw comparable conclusions, and make similar predictions. 
             While adjusting parameter values, one finds that the data can be matched well to the Hantush-Jacob curve with an $r/B$ value of 0.4. 
             """)
     left_co2, cent_co2, last_co2 = st.columns((20,60,20))
@@ -461,7 +461,7 @@ with st.expander("Matching the **Hantush-Jacob Solutions** to drawdown data from
 
 with st.expander('**:red[Click here]** to see one **example of the Hantush-Jacob curve fitting to the :violet[Pirna] data**'):
     st.markdown(""" 
-            While adjusting parameter values, one finds that the data cannot be matched well to the Hantush-Jacob curve. The reason for this behavior is that the investigated aquifer doesn't conform to the conditions for applying the Hantush-Jacob solution because it is unconfined. In an uncofined aquifer, delayed yield should be considered, that is the character of the drawdown curve will first be controlled by the elastic storage of the aquifer, then there will be a period of constant drawdown while pore drainage
+            While adjusting parameter values, one finds that the data cannot be matched well to the Hantush-Jacob curve. The reason for this behavior is that the investigated aquifer does not conform to the conditions for applying the Hantush-Jacob solution because it is unconfined. In an unconfined aquifer, delayed yield should be considered, that is the character of the drawdown curve will first be controlled by the elastic storage of the aquifer, then there will be a period of constant drawdown while pore drainage
             """)
     left_co2, cent_co2, last_co2 = st.columns((20,60,20))
     with cent_co2:

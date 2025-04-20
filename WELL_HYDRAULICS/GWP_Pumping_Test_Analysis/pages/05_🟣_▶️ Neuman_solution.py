@@ -205,7 +205,7 @@ st.session_state.Ss_slider_value = -5.0
 st.session_state.SY = 0.25
 st.session_state.number_input = False  # Default to number_input
     
-# (Here, the methode computes the data for the well function. Those data can be used to generate a type curve.)
+# (Here, the method computes the data for the well function. Those data can be used to generate a type curve.)
 u_min = -5
 u_max = 4
 
@@ -280,12 +280,12 @@ Qd = Qs*60*60*24 # m^3/d
 m_time_s = [i*60 for i in m_time] # time in seconds
 num_times = len(m_time)
 
-st.subheader(':violet-background[Estimate $T$, $Ss$, $S$, aynd $β$] by matching Neuman Curves to measured data', divider="violet")
+st.subheader(':violet-background[Estimate $T$, $Ss$, $S$, and $β$] by matching Neuman Curves to measured data', divider="violet")
 
 st.markdown("""
             In this section, you can **adjust the values of transmissivity, specific storage, specific yield, and beta until the curve of drawdown versus time that is calculated and plotted on the graph matches the measured data from the Pirna test site in Germany**. The match indicates that the selected values are a reasonable representation of the aquifer properties.
             
-            The alluvial aquifer is 6 meters thick. The data are produced in a relatively short pumping test that was performed in November 2024 during a field course for the MWW02 course at the [Technical University of Dresden](http://www.tu-dresden.de/die_tu_dresden/fakultaeten/fakultaet_forst_geo_und_hydrowissenschaften/fachrichtung_wasserwesen/igw).  The pumping rate during the test was 1.18 m³/min. The drawdown was measured with an pressure transducer in an observation well that is 91 m away from the pumping well. The measured drawdown data show an initial response to the pumping that is reflected by the first approximately five to ten measurments. The drawdown curve subsequently flattens and then rises again. 
+            The alluvial aquifer is 6 meters thick. The data are produced in a relatively short pumping test that was performed in November 2024 during a field course for the MWW02 course at the [Technical University of Dresden](http://www.tu-dresden.de/die_tu_dresden/fakultaeten/fakultaet_forst_geo_und_hydrowissenschaften/fachrichtung_wasserwesen/igw).  The pumping rate during the test was 1.18 m³/min. The drawdown was measured with a pressure transducer in an observation well that is 91 m away from the pumping well. The measured drawdown data show an initial response to the pumping that is reflected by the first approximately five to ten measurements. The drawdown curve subsequently flattens and then rises again. 
             
             After fitting the data to the Neuman curve we can estimate parameter values and use the aquifer thickness to calculate horizontal and vertical hydraulic conductivity of the aquifer.
             
@@ -343,7 +343,7 @@ def inverse():
         else:
             SY = st.slider('**Specific Yield**', 0.01, 0.50, st.session_state.SY, 0.01, format="%4.2f", key="SY_input",on_change=update_SY)
 
-    # Compute K and SS to provide parameters for plausability check (i.e. are the parameter in a reasonable range)
+    # Compute K and SS to provide parameters for plausibility check (i.e. are the parameter in a reasonable range)
     K = T/b     # m/s
     Kz = K/10
     Sa = Ss * b
@@ -477,7 +477,7 @@ inverse()
 
 with st.expander('**:red[Click here]** to see one **example of the Neuman curve fitting to the :violet[Pirna] data**'):
     st.markdown(""" 
-            The following example shows one curve match of the Pirna data set, which represents an unconfined aquifer. If several experts made the curve match they would all have a slightly different set of parameter values, but the parameter sets would likely all be close enough to the shown example to draw comparable conclusions, and make similar predictions. While adjusting parameter values, one finds that the data can be matched well to the Neuman curve. The reason for this behavior is that the investigated aquifer, at least partially, conforms to the conditions for applying the Neuman solution because it is unconfined. 
+            The following example shows one curve match of the Pirna data set, which represents an unconfined aquifer. If several experts made the curve match, they would all have a slightly different set of parameter values, but the parameter sets would likely all be close enough to the shown example to draw comparable conclusions, and make similar predictions. While adjusting parameter values, one finds that the data can be matched well to the Neuman curve. The reason for this behavior is that the investigated aquifer, at least partially, conforms to the conditions for applying the Neuman solution because it is unconfined. 
             """)
     left_co2, cent_co2, last_co2 = st.columns((20,60,20))
     with cent_co2:

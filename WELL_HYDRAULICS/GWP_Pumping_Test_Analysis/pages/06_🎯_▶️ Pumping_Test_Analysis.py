@@ -127,7 +127,7 @@ def update_Ss():
 def update_SY():
     st.session_state.SY = st.session_state.SY_input
     
-# (Here, the methode computes the data for the well function. Those data can be used to generate a type curve.)
+# (Here, the method computes the data for the well function. Those data can be used to generate a type curve.)
 u_min = -5
 u_max = 4
 
@@ -249,7 +249,7 @@ elif(st.session_state.Data =="Load own CSV dataset"):
     b = 10        # m
     Qs = 0.005    # m^3/s
     Qd = 100      # m^3/d
-    uploaded_file = st.file_uploader("Choose a file (subsequently you can add the aquifer thicknes, the pumping rate and the distance between well and observation). The required data format for the CSV-file is time in minutes and drawdown in meters, both separated by a comma.")
+    uploaded_file = st.file_uploader("Choose a file (subsequently you can add the aquifer thickness, the pumping rate, and the distance between well and observation). The required data format for the CSV-file is time in minutes and drawdown in meters, both separated by a comma.")
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
         m_time = list(df.iloc[:,0].values)

@@ -24,7 +24,7 @@ st.markdown(
     ### Development
     Innovative and digital learning and teaching materials are currently enhanced and transferred to various partners across Europe by the EU cooperation project [iNUX](https://www.gw-inux.org/). The iNUX project is funded by the ERASMUS+ program of the European Union.
     
-    PumpingTestAnalysis was developed by Thomas Reimann and the iNUX Team as a Streamlit application and adapted to the Groundwater Project interactive education format. It was released in March of 2025. All Groundwater Project books are available for free download.
+    PumpingTestAnalysis was developed by Thomas Reimann of iNUX along with Eileen Poeter of the Groundwater Project as a Streamlit application, then adapted to the Groundwater Project [interactive education](https://gw-project.org/interactive-education/) format. It was released in April of 2025. All Groundwater Project [books](https://gw-project.org/books/) are available for free download.
     """
 )
 
@@ -71,7 +71,7 @@ with cent_co4:
 
         :green[Please help us by using the following link when sharing this tool with others.]   
 
-        https://interactive-education.gw-project.org/GWP_Pumping_Test_Analysis/
+        https://interactive-education.gw-project.org/pumping-test-analysis/
         """   
     )
     

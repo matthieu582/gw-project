@@ -40,7 +40,7 @@ with st.expander(":green[**Show/Hide the initial assessment**]"):
     columnsQ1 = st.columns((1,1))
     
     with columnsQ1[0]:
-        stb.single_choice(":blue[**What conditions are applicable for use of the Theis equaiton?**]",
+        stb.single_choice(":blue[**What conditions are applicable for use of the Theis equation?**]",
                   ["Steady state flow, confined aquifer", "Transient flow, confined aquifer", "Steady state flow, unconfined aquifer",
                   "Transient flow, unconfined aquifer"],
                   1,success='CORRECT! The Theis Solution describes transient flow to a well in a confined aquifer.', error='This is not correct ... You can learn more about the Theis Solution [by downloading the book: An Introduction to Hydraulic Testing in Hydrogeology - Basic Pumping, Slug, and Packer Methods​​ and reading Section 8](https://gw-project.org/books/an-introduction-to-hydraulic-testing-in-hydrogeology-basic-pumping-slug-and-packer-methods/). Feel free to answer again.')
@@ -58,7 +58,7 @@ with st.expander(":green[**Show/Hide the initial assessment**]"):
 # Create ToDos to proceed with the steps of the exercise
 st.markdown("""
             **STEP 1:**
-            First we investigate drawdown around a pumping well in response to water abstraction as a function of space and time.
+            First, we investigate drawdown around a pumping well in response to water abstraction as a function of space and time.
                        
            _This can be accomplished by adjusting the interactive inputs (using a slider or a typed number, depending on the toggle switch) for the graphs in the section below titled "Computation of drawdown" to observe changes in drawdown as is described for Exercise 1 below._
            

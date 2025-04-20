@@ -91,7 +91,7 @@ st.markdown("""
             
             The generated data include some 'measurement noise'. You can modify the amount of noise by toggling "Define the noise in the data" on the left control panel above the plot and adjusting the value. 
 
-            Each time you click the button "Regenerate data" below the plot, a new set of drawdown versus time data will be generated using a pumping rate of _Q_ = 0.017 m³/s, an observation well at _r_ = 120 m, and assuming a random value for $T$ and $S$.           
+            Each time you click the button "Regenerate data" below the plot, a new set of drawdown-versus-time data will be generated using a pumping rate of _Q_ = 0.017 m³/s, an observation well at _r_ = 120 m, and assuming a random value for $T$ and $S$.           
             
             Clicking the box below will provide steps that you can follow to estimate parameter values, make a prediction of drawdown, and assess the quality of the prediction.      
 """     
