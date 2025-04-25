@@ -19,7 +19,7 @@ st.header('👉 About PumpingTestAnalysis')
 st.markdown(
     """
     ### Description
-    The Pumping Test Analysis interactive tool calculates the drawdown response for a pumping well in a homogeneous, isotropic aquifer. The application is designed to introduce the evaluation of pumping tests for confined, unconfined, and leaky aquifers.
+    The Pumping Test Analysis module calculates the drawdown response for a pumping well in a homogeneous, isotropic aquifer. The module is designed to introduce the evaluation of pumping tests for confined, unconfined, and leaky aquifers.
     
     ### Development
     Innovative and digital learning and teaching materials are currently enhanced and transferred to various partners across Europe by the EU cooperation project [iNUX](https://www.gw-inux.org/). The iNUX project is funded by the ERASMUS+ program of the European Union.

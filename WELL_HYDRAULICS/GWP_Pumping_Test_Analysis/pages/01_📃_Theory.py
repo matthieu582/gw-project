@@ -20,13 +20,13 @@ institution_text = " | ".join(institution_list)
 
 st.title('📃 Basic Theory')
 
-st.header(':orange[Underlying the Pumping Test Analysis Application]')
+st.header(':orange[Underlying the Pumping Test Analysis Module]')
 
 st.subheader(':orange-background[Introduction and Overview]', divider="orange")
 st.markdown("""
-            This part of the application provides a general overview about groundwater flow toward a well. It explains the underlying principles and provides a quantitative description of the process using the groundwater flow equation. 
+            This part of the module provides a general overview about groundwater flow toward a well. It explains the underlying principles and provides a quantitative description of the process using the groundwater flow equation. 
             
-            The details of specific equations describing groundwater flow to a well under confined, leaky, and unconfined aquifer conditions (i.e., the Theis, Hantush-Jacob, and Neuman solutions) are provided in separate sections of this application that are dedicated to each solution.
+            The details of specific equations describing groundwater flow to a well under confined, leaky, and unconfined aquifer conditions (i.e., the Theis, Hantush-Jacob, and Neuman solutions) are provided in separate sections of this module that are dedicated to each solution.
             
             We offer a few questions to allow you to assess the current state of your knowledge.
 """
@@ -54,7 +54,7 @@ with st.expander(":green[**Show/Hide the initial assessment**]"):
 st.subheader(':orange-background[General situation]', divider="orange")
 
 st.markdown("""
-            The mathematics included in this application consider only homogeneous and isotropic aquifers. Natural aquifers are not homogeneous nor isotropic (although they come close to isotropic in most instances). Consequently, in practice, the procedures presented in this application are applied to heterogeneous and anisotropic aquifers to glean average parameter values that are representative of bulk behavior of the system. The aquifer can be confined, leaky, or unconfined. 
+            The mathematics included in this module consider only homogeneous and isotropic aquifers. Natural aquifers are not homogeneous nor isotropic (although they come close to isotropic in most instances). Consequently, in practice, the procedures presented in this module are applied to heterogeneous and anisotropic aquifers to glean average parameter values that are representative of bulk behavior of the system. The aquifer can be confined, leaky, or unconfined. 
             
             When a well pumps water out of an aquifer, water flows radially toward the well.
             
@@ -91,7 +91,7 @@ st.latex(r'''u = \frac{Sr^2}{4Tt}''')
 
 st.markdown("""
             #### Solving the equation
-            This equation is not easy to solve. **Historically**, values for the well function were provided in **tables** or presented as a **type-curve** graph. If you are interested in manual type-curve matching, you can find another application that provides all required materials and guidance at [https://theis-manual.streamlit.app/](https://theis-manual.streamlit.app/). The Cooper-Jacob straight-line methods are simplified analytical approaches derived from the Theis solution and are commonly used for estimating aquifer parameters from late-time drawdown data. While widely applied in practice, these methods are not covered in this application. A future application that covers advanced methods for pumping test analysis will account for the Cooper-Jacob straight line methods.
+            This equation is not easy to solve. **Historically**, values for the well function were provided in **tables** or presented as a **type-curve** graph. If you are interested in manual type-curve matching, another module that provides all required materials and guidance is available at [https://theis-manual.streamlit.app/](https://theis-manual.streamlit.app/). The Cooper-Jacob straight-line methods are simplified analytical approaches derived from the Theis solution and are commonly used for estimating aquifer parameters from late-time drawdown data. While widely applied in practice, these methods are not covered in this module. A future module that covers advanced methods for pumping test analysis will account for the Cooper-Jacob straight line methods.
 """
 ) 
 with st.expander(':orange[**Click here**] for further **information about Charles V. Theis** and his solution, including his **original communication** of the solution and a **video interview**'):
@@ -122,7 +122,7 @@ st.markdown("""
             
             Nevertheless, **it is best practice to view the data in graphical form whether it is plotted by hand or by a computer** because the shape of the curve provides insight to the nature of the groundwater system and sometimes plotting the data reveals errors in the data.
                   
-            Subsequently, in this application, the Theis equation is solved using Python codes.
+            Subsequently, in this module, the Theis equation is solved using Python codes.
 """
 ) 
 st.subheader(':orange-background[Limitations and Extensions of the Theis Solution]', divider="orange")           
@@ -146,7 +146,7 @@ st.markdown (
     
     To address these limitations, **Hantush and Jacob (1955)** developed a solution that extends the Theis model of flow in a fully confined aquifer to flow in a leaky aquifer. This represents leakage from an over- or under-lying aquifer through an aquitard that does not store water, allowing for analysis in regions where semi-pervious aquitards are present.
     
-    Further refinements were made by **Neuman (1972)**, who introduced a solution that accounts for the delayed decline of water level in unconfined aquifers. Also, although not included in this application, Neuman developed solutions for flow to partially penetrating wells for the delayed observation of aquifer drawdown due to removal of water from wellbore storage. 
+    Further refinements were made by **Neuman (1972)**, who introduced a solution that accounts for the delayed decline of water level in unconfined aquifers. Also, although not included in this module, Neuman developed solutions for flow to partially penetrating wells for the delayed observation of aquifer drawdown due to removal of water from wellbore storage. 
     
     These developments represent significant advancements beyond the Theis solution, enabling interpretation of pumping test data in a wider range of hydrogeological settings.
 """

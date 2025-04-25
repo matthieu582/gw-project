@@ -16,11 +16,11 @@ institution_list = [f"{index_symbols[i-1]} {inst}" for i, inst in institutions.i
 institution_text = " | ".join(institution_list)
 
 st.set_page_config(
-    page_title="Pumping Test Analysis Application",
+    page_title="Pumping Test Analysis Module",
     page_icon="🌀",
 )
 
-st.title("Pumping Test Analysis Application 🌀")
+st.title("Pumping Test Analysis Module 🌀")
 
 
 st.sidebar.success("☝️ Select a page above ☝️")
@@ -31,15 +31,15 @@ st.markdown(
     """
     **Pumping tests** are one of the most **important methods** for acquiring information about groundwater systems. A pumping test provides values of aquifer **transmissivity** $T$ and **storativity**  $S$ and in some settings, other hydraulic parameter values.
     
-    This application is designed to introduce the evaluation of pumping tests for confined, unconfined, and leaky aquifers.
+    This module is designed to introduce the evaluation of pumping tests for confined, unconfined, and leaky aquifers.
 """
 )
 
-st.subheader(':blue[Overview of the application]', divider="blue")
+st.subheader(':blue[Overview of the module]', divider="blue")
 
 st.markdown(
     """       
-    This application combines theoretical explanations with interactive applications and exercises. Quizzes inside the application allow you to assess your understanding. The underlying theory is provided as a concise overview at the beginning.
+    This module combines theoretical explanations with interactive applications and exercises. Quizzes inside the module allow you to assess your understanding. The underlying theory is provided as a concise overview at the beginning.
     
     :blue[First, the general response of aquifers to groundwater abstraction] is explained as a cone of water-level drawdown expanding outward from a well over time.
     
@@ -67,7 +67,7 @@ st.markdown(
  """
 )
 
-st.subheader(':blue[Overview and Navigation of the application]', divider="blue")
+st.subheader(':blue[Overview and Navigation of the module]', divider="blue")
 st.markdown(
     """     
     **To navigate the pumping test analysis tool you can use menu items on the sidebar to:**
@@ -79,7 +79,7 @@ st.markdown(
     - 🎯 **Investigate measured data of your own** (or other field datasets you provide) with the Theis, Hantush-Jacob, or Neuman Solution.
     - 📈 **Explore the impact of uncertainty associated with parameter value estimates on predicted drawdown** by estimating parameters for a random dataset with noise and using the estimates for a drawdown prediction.
 
-    This interactive application allows investigation of transient flow to a well and estimation of aquifer parameter values using the Theis, Hantush-Jacob, and Neuman Solutions for confined, leaky, and unconfined conditions. The calculations are based on spreadsheets developed by Professor Rudolf Liedl and Professor Charles R. Fitts.
+    This interactive module allows investigation of transient flow to a well and estimation of aquifer parameter values using the Theis, Hantush-Jacob, and Neuman Solutions for confined, leaky, and unconfined conditions. The calculations are based on spreadsheets developed by Professor Rudolf Liedl and Professor Charles R. Fitts.
     
     :green
     ___
@@ -92,7 +92,7 @@ with cent_co2:
     """
         :green[The Groundwater Project is a nonprofit organization with one full-time staff and over 1000 volunteers.]
 
-        :green[Please help us by using the following link when sharing this application with others.]   
+        :green[Please help us by using the following link when sharing this module with others.]   
 
         https://interactive-education.gw-project.org/pumping-test-analysis/
         """   

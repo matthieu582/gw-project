@@ -23,7 +23,7 @@ author_list = [f"{name}{''.join(index_symbols[i-1] for i in indices)}" for name,
 institution_list = [f"{index_symbols[i-1]} {inst}" for i, inst in institutions.items()]
 institution_text = " | ".join(institution_list)
 
-st.title('📈 Exercise and Application')
+st.title('📈 Exercise and Application of Pumping Test Analysis')
 
 st.header(':red[Explore Uncertainty] associated with using parameter values estimated via Theis Curve fitting to predict drawdown for other pumping rates, times, and distances')
 

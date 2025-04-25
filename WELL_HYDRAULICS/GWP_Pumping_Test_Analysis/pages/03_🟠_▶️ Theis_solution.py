@@ -116,7 +116,7 @@ with st.expander('**Click here for more information** about the underlying theor
     """
     This function is commonly evaluated using either numerical techniques or tables of $W$ as a function of $u$. The Theis solution is widely used in pumping test analysis to estimate aquifer properties by fitting observed drawdown data to the Theis type curve.
     
-    Another application that provides all materials and guidance for **manual Theis type-curve matching** is available at [https://theis-manual.streamlit.app/](https://theis-manual.streamlit.app/).
+    Another module that provides all materials and guidance for **manual Theis type-curve matching** is available at [https://theis-manual.streamlit.app/](https://theis-manual.streamlit.app/).
     """
     )
 
